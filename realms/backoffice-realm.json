@@ -1,0 +1,33 @@
+{
+  "realm": "backoffice",
+  "displayName": "Back-office gérants",
+  "enabled": true,
+  "loginTheme": "resto",
+  "roles": {
+    "realm": [
+      { "name": "gerant" },
+      { "name": "employe" }
+    ]
+  },
+  "clients": [
+    {
+      "clientId": "app-backoffice",
+      "publicClient": false,
+      "secret": "change-me-demo",
+      "standardFlowEnabled": true,
+      "redirectUris": ["*"]
+    }
+  ],
+  "users": [
+    {
+      "username": "gerant.demo",
+      "enabled": true,
+      "email": "gerant.demo@example.com",
+      "emailVerified": true,
+      "firstName": "Gérant",
+      "lastName": "Démo",
+      "credentials": [{ "type": "password", "value": "Demo-2026!", "temporary": false }],
+      "realmRoles": ["gerant"]
+    }
+  ]
+}

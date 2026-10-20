@@ -1,0 +1,9 @@
+/* Thème de démonstration : bandeau orange, preuve visuelle que le thème monté est actif. */
+body {
+  background: linear-gradient(135deg, #f97316 0%, #7c2d12 100%) !important;
+}
+#kc-header-wrapper::after {
+  content: " · thème personnalisé";
+  font-size: 0.6em;
+  opacity: 0.8;
+}
